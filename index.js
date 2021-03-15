@@ -4,6 +4,7 @@ const port = 7000
 const bodyParser = require('body-parser');
 const { User } = require("./models/User");
 
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
